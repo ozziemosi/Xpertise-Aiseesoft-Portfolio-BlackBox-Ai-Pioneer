@@ -1,0 +1,330 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Portfolio
+    </title>
+    <script src="https://cdn.tailwindcss.com">
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #1a1a1a;
+            color: #ffffff;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Default Light Mode */
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #1a1a1a;
+            --secondary-color: #f5f5f5;
+            --button-color: #1a1a1a;
+            --button-text-color: #ffffff;
+        }
+
+        /* Dark Mode */
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #ffffff;
+            --secondary-color: #2a2a2a;
+            --button-color: #f5f5f5;
+            --button-text-color: #1a1a1a;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .bg-secondary {
+            background-color: var(--secondary-color);
+        }
+
+        .btn {
+            background-color: var(--button-color);
+            color: var(--button-text-color);
+        }
+
+    </style>
+</head>
+
+<body class="p-8" data-theme="dark">
+    <div class="max-w-5xl mx-auto">
+        <div class="flex items-center justify-between mb-8">
+            <div class="flex items-center">
+                <img alt="Profile picture of Ahmed Khalid" class="w-24 h-24 rounded-full mr-4" height="100" src="https://images.unsplash.com/photo-1609660100545-05f3799a941b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRldiUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D" width="100" />
+                <div>
+                    <h1 class="text-3xl font-bold">
+                        Ozzie Mosis
+                    </h1>
+                    <p class="text-sm text-gray-400">
+                        Software Engineer
+                    </p>
+                    <p class="text-sm mt-2">
+                        Lorem ipsum dolor sit amet consectetur. Quam ut feugiat ut porta morbi lobortis tristique.
+                    </p>
+                    <div class="flex items-center mt-2">
+                        <a class="text-sm text-blue-400 mr-4" href="mailto:knoxvilleozzie76@mail.com">
+                            <i class="fas fa-envelope mr-1">
+                            </i>
+                            knoxvilleozzie76@mail.com
+                        </a>
+                        <a class="text-sm text-blue-400" href="tel:+256758435028">
+                            <i class="fas fa-phone mr-1">
+                            </i>
+                            +256758435028
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center">
+                <i class="fas fa-sun text-gray-400 mr-4">
+                </i>
+                <button class="bg-gray-700 text-white px-4 py-2 rounded-full">
+                    X.A.S.S
+                </button>
+            </div>
+        </div>
+        <div class="flex mb-8">
+            <div class="w-1/4 bg-gray-800 p-4 rounded-lg">
+                <h2 class="text-lg font-semibold mb-4">
+                    About
+                </h2>
+                <p class="text-sm mb-4">
+                    A passionate software engineer with a strong background in Computer Science.
+                </p>
+                <p class="text-sm flex items-center mb-2">
+                    <i class="fas fa-map-marker-alt mr-2">
+                    </i>
+                    Kampala, Uganda
+                </p>
+                <p class="text-sm flex items-center mb-2">
+                    <i class="fas fa-building mr-2">
+                    </i>
+                    Xpertise Aiseesoft Pioneer
+                </p>
+                <p class="text-sm flex items-center">
+                    <i class="fas fa-link mr-2">
+                    </i>
+                    <a class="text-blue-400" href="https://github.com/ozziemosi">
+                        https://github.com/ozziemosi
+                    </a>
+                </p>
+            </div>
+            <div class="w-3/4 ml-8">
+                <div class="flex items-center mb-4">
+                    <a class="text-lg font-semibold text-blue-400 mr-8 cursor-pointer" onclick="showSection('projects')">
+                        Projects
+                    </a>
+                    <a class="text-lg font-semibold text-gray-400 mr-8 cursor-pointer" onclick="showSection('resume')">
+                        Resume
+                    </a>
+                    <a class="text-lg font-semibold text-gray-400 cursor-pointer" onclick="showSection('contact')">
+                        Contact
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-4" id="projects">
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <img alt="Stock Photo Application" class="w-full h-32 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/cYPeOKhqZfrevJHiNsRp58fEiP1sH9Zb5lGkp3YbHetZZgceE.jpg" width="300" />
+                        <h3 class="text-lg font-semibold mb-2">
+                            Stock Photo Application
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Web App
+                        </p>
+                        <p class="text-sm">
+                            Pixstock - Stock Media App
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <img alt="Build a Recipe App" class="w-full h-32 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/7FCdygMKreRKTyF1IjuS4nslVfb7PThZHxtoCeeBUJCdMQOPB.jpg" width="300" />
+                        <h3 class="text-lg font-semibold mb-2">
+                            Build a Recipe App
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Web App
+                        </p>
+                        <p class="text-sm">
+                            Cook.io - Recipe App
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <img alt="Build GitHub Clone App" class="w-full h-32 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/XZaTivCYAJ5IIJ5uBtf6yKnXa9j5yHd8xyDsTUGge2jGDkzTA.jpg" width="300" />
+                        <h3 class="text-lg font-semibold mb-2">
+                            Build GitHub Clone App
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Web App
+                        </p>
+                        <p class="text-sm">
+                            GitFinder - Github User Finder
+                        </p>
+                    </div>
+                    <div class="bg-gray-800 p-4 rounded-lg">
+                        <img alt="Weather App &amp; Forecast" class="w-full h-32 object-cover rounded-lg mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/er5jZDW1YB2oL6nzpOrOqgPmYmDrVY33aUM5WdsLbD6kBy5JA.jpg" width="300" />
+                        <h3 class="text-lg font-semibold mb-2">
+                            Weather App &amp; Forecast
+                        </h3>
+                        <p class="text-sm text-gray-400 mb-2">
+                            Web App
+                        </p>
+                        <p class="text-sm">
+                            Weatherio - Live Weather App
+                        </p>
+                    </div>
+                </div>
+
+                <div class="hidden" id="resume">
+                    <h2 class="text-2xl font-semibold mb-4">Resume</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Experience</h3>
+                            <div class="mb-4">
+                                <h4 class="text-md font-semibold">Software Engineer</h4>
+                                <p class="text-sm text-gray-400">TechGulf Solutions</p>
+                                <p class="text-sm">Jan 2020 - Present</p>
+                                <p class="text-sm mt-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                </p>
+                            </div>
+                            <div>
+                                <h4 class="text-md font-semibold">Junior Developer</h4>
+                                <p class="text-sm text-gray-400">WebDev Co.</p>
+                                <p class="text-sm">Jan 2018 - Dec 2019</p>
+                                <p class="text-sm mt-2">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-2">Education</h3>
+                            <div>
+                                <h4 class="text-md font-semibold">B.Sc. in Computer Science</h4>
+                                <p class="text-sm text-gray-400">Cairo University</p>
+                                <p class="text-sm">2014 - 2018</p>
+                            </div>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg col-span-2">
+                            <h3 class="text-lg font-semibold mb-2">Skills</h3>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="flex items-center">
+                                    <i class="fab fa-js-square text-yellow-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">JavaScript</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-react text-blue-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">React</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-node text-green-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">Node.js</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-python text-blue-400 text-2xl mr-2"></i>
+                                    <span class="text-sm">Python</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-html5 text-orange-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">HTML5</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-css3-alt text-blue-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">CSS3</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <i class="fab fa-git-alt text-red-500 text-2xl mr-2"></i>
+                                    <span class="text-sm">Git</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden" id="contact">
+                    <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <p class="text-sm mb-4">Feel free to reach out to me via email or phone.</p>
+                            <p class="text-sm flex items-center mb-2">
+                                <i class="fas fa-envelope mr-2"></i>
+                                <a class="text-blue-400" href="mailto:khalid@techgulf.com">khalid@techgulf.com</a>
+                            </p>
+                            <p class="text-sm flex items-center mb-2">
+                                <i class="fas fa-phone mr-2"></i>
+                                <a class="text-blue-400" href="tel:+256758435028">+256758435028</a>
+                            </p>
+                            <p class="text-sm flex items-center mb-2">
+                                <i class="fas fa-map-marker-alt mr-2"></i>
+                                Cairo, Egypt
+                            </p>
+                            <p class="text-sm flex items-center">
+                                <i class="fas fa-link mr-2"></i>
+                                <a class="text-blue-400" href="http://example.com">http://example.com</a>
+                            </p>
+                        </div>
+                        <div class="bg-gray-800 p-4 rounded-lg">
+                            <h3 class="text-lg font-semibold mb-4">Contact Form</h3>
+                            <form>
+                                <div class="mb-4">
+                                    <label class="block text-sm mb-2" for="name">Name</label>
+                                    <input class="w-full p-2 bg-gray-700 rounded-lg text-sm" id="name" name="name" type="text" />
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm mb-2" for="email">Email</label>
+                                    <input class="w-full p-2 bg-gray-700 rounded-lg text-sm" id="email" name="email" type="email" />
+                                </div>
+                                <div class="mb-4">
+                                    <label class="block text-sm mb-2" for="message">Message</label>
+                                    <textarea class="w-full p-2 bg-gray-700 rounded-lg text-sm" id="message" name="message" rows="4"></textarea>
+                                </div>
+                                <button class="bg-blue-500 text-white px-4 py-2 rounded-lg" type="submit">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        function showSection(section) {
+            document.getElementById('projects').classList.add('hidden');
+            document.getElementById('resume').classList.add('hidden');
+            document.getElementById('contact').classList.add('hidden');
+            document.getElementById(section).classList.remove('hidden');
+        }
+        const themeToggle = document.getElementById("theme-toggle");
+        const themeIcon = document.getElementById("theme-icon");
+        const body = document.body;
+
+        // Function to toggle theme
+        function toggleTheme() {
+            const isDark = body.getAttribute("data-theme") === "dark";
+
+            if (isDark) {
+                body.setAttribute("data-theme", "light");
+                themeIcon.classList.remove("fa-sun");
+                themeIcon.classList.add("fa-moon");
+            } else {
+                body.setAttribute("data-theme", "dark");
+                themeIcon.classList.remove("fa-moon");
+                themeIcon.classList.add("fa-sun");
+            }
+        }
+
+        // Add event listener to toggle button
+        themeToggle.addEventListener("click", toggleTheme);
+
+    </script>
+</body>
+
+</html>
